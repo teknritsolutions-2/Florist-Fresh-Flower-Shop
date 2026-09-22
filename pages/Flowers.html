@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bloom & Petal is a modern floral studio for beautiful fresh flowers and thoughtful gifting.">
+    <title>Bloom &amp; Petal | Floral Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" type="image/webp" href="../assets/images/hero/hero-floral-studio.webp" imagesrcset="../assets/images/hero/hero-floral-studio.webp 1920w" imagesizes="100vw">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="site-header">
+        <div class="header-container container">
+            <a class="brand" href="Homepage1.html" aria-label="Bloom and Petal Floral Studio home">
+                <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-spa"></i></span>
+                <span class="brand-copy">
+                    <span class="brand-name">Bloom <em>&amp;</em> Petal</span>
+                    <span class="brand-tagline">Floral Studio</span>
+                </span>
+            </a>
+
+            <nav class="primary-navigation" aria-label="Primary navigation">
+                <ul class="nav-list">
+                    <li class="nav-item has-dropdown">
+                        <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" aria-controls="home-submenu">
+                            Home <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="home-dropdown" id="home-submenu" aria-label="Home pages">
+                            <a class="home-option is-current" href="Homepage1.html" aria-current="page">
+                                <span>Home Page 1</span>
+                                <small>Fresh Flower Shop</small>
+                            </a>
+                            <a class="home-option" href="Homepage2.html">
+                                <span>Home Page 2</span>
+                                <small>Luxury Floral Studio</small>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a class="nav-link" href="Flowers.html" aria-current="page">Flowers</a></li>
+                    <li><a class="nav-link" href="Occations.html">Occasions</a></li>
+                    <li><a class="nav-link" href="Services.html">Services</a></li>
+                    <li><a class="nav-link" href="About.html">About</a></li>
+                    <li><a class="nav-link" href="Blog.html">Blog</a></li>
+                    <li><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-button theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme">
+                    <i class="fa-regular fa-moon icon-moon" aria-hidden="true"></i>
+                    <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+                </button>
+                <button class="rtl-toggle" type="button" aria-pressed="false" title="Switch text direction">RTL</button>
+                <a class="icon-button cart-button" href="Flowers.html" aria-label="Shopping bag, 2 items">
+                    <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                    <span class="cart-count" aria-hidden="true">2</span>
+                </a>
+                <a class="btn btn-outline header-login" href="Login.html">Login</a>
+            </div>
+
+            <div class="mobile-actions">
+                <a class="icon-button cart-button" href="Flowers.html" aria-label="Shopping bag, 2 items">
+                    <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                    <span class="cart-count" aria-hidden="true">2</span>
+                </a>
+                <button class="icon-button menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu" hidden>
+            <div class="container mobile-menu-inner">
+                <nav aria-label="Mobile navigation">
+                    <ul class="mobile-nav-list">
+                        <li class="mobile-home-group">
+                            <span class="mobile-nav-heading">Home</span>
+                            <a href="Homepage1.html" aria-current="page">Home Page 1 <small>Fresh Flower Shop</small></a>
+                            <a href="Homepage2.html">Home Page 2 <small>Luxury Floral Studio</small></a>
+                        </li>
+                        <li><a href="Flowers.html" aria-current="page">Flowers</a></li>
+                        <li><a href="Occations.html">Occasions</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-controls">
+                    <button class="mobile-control theme-toggle" type="button" aria-label="Switch to dark mode">
+                        <span>Dark mode</span>
+                        <i class="fa-regular fa-moon icon-moon" aria-hidden="true"></i>
+                        <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+                    </button>
+                    <button class="mobile-control rtl-toggle" type="button" aria-pressed="false">
+                        <span>Right-to-left layout</span><strong>RTL</strong>
+                    </button>
+                    <a class="btn btn-primary mobile-login" href="Login.html">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="home-flowers-hero" aria-labelledby="home-flowers-title">
+            <div class="home-flowers-hero-layout container">
+                <div class="home-flowers-hero-copy">
+                    <p class="home-flowers-hero-eyebrow">— Our Flowers <span aria-hidden="true">•</span></p>
+                    <h1 class="home-flowers-hero-title" id="home-flowers-title">Flowers, Chosen to Be Remembered</h1>
+                    <p class="home-flowers-hero-description">Thoughtfully designed arrangements created by our florists to celebrate the people, moments and feelings that matter most.</p>
+                    <div class="home-flowers-hero-actions">
+                        <a class="btn btn-primary" href="Flowers.html">Shop the Collection <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                        <a class="home-flowers-hero-secondary" href="Services.html">Find Your Flowers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                    <p class="home-flowers-hero-detail"><span aria-hidden="true">✦</span> Hand-selected, seasonally arranged <span aria-hidden="true">•</span> Bloom &amp; Petal studio</p>
+                </div>
+                <div class="home-flowers-hero-media">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/15579388/pexels-photo-15579388.jpeg" alt="A richly composed floral arrangement prepared in the Bloom and Petal studio" width="1920" height="1280" fetchpriority="high">
+                        <figcaption>Flowers with feeling</figcaption>
+                    </figure>
+                    <div class="home-flowers-hero-divider" aria-hidden="true"></div>
+                </div>
+            </div>
+        </section>
+        <section class="flowers-collection" aria-labelledby="flowers-collection-title">
+
+    <div class="flowers-collection-intro">
+
+        <span class="section-label">— SHOP BY COLLECTION •</span>
+
+        <h2 id="flowers-collection-title">
+            Flowers for Every Kind of Moment
+        </h2>
+
+        <p>
+            Explore thoughtfully curated floral collections designed around
+            different moods, seasons and ways of expressing how you feel.
+        </p>
+
+    </div>
+
+
+    <div class="flowers-collection-showcase">
+
+        <div class="flowers-collection-featured">
+
+            <div class="flowers-collection-featured-media">
+                <img
+                    src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1400&q=85"
+                    alt="Seasonal flowers arranged in a natural floral composition"
+                    loading="lazy"
+                >
+            </div>
+
+            <a href="Flowers.html" class="flowers-collection-featured-content">
+
+                <div>
+                    <span class="flowers-collection-category">
+                        Seasonal Edit
+                    </span>
+
+                    <h3>
+                        Seasonal Flowers
+                    </h3>
+
+                    <p>
+                        The freshest blooms inspired by the beauty, colour
+                        and character of the current season.
+                    </p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <a href="Flowers.html" class="flowers-collection-signature">
+
+            <span class="flowers-collection-category">
+                Signature Collection
+            </span>
+
+            <h3>
+                Signature Arrangements
+            </h3>
+
+            <p>
+                Distinctive compositions designed by our florists with
+                expressive colour, texture and natural movement.
+            </p>
+
+        </a>
+
+
+        <div class="flowers-collection-small-grid">
+
+            <a href="Flowers.html" class="flowers-collection-box">
+
+                <div>
+                    <span class="flowers-collection-category">
+                        Timeless Collection
+                    </span>
+
+                    <h3>
+                        Roses
+                    </h3>
+
+                    <p>
+                        Timeless roses arranged with a contemporary
+                        and sophisticated touch.
+                    </p>
+                </div>
+
+            </a>
+
+
+            <a href="Flowers.html" class="flowers-collection-box">
+
+                <div>
+                    <span class="flowers-collection-category">
+                        Natural Collection
+                    </span>
+
+                    <h3>
+                        Wildflower Bouquets
+                    </h3>
+
+                    <p>
+                        Naturally expressive flowers gathered with
+                        effortless movement and relaxed beauty.
+                    </p>
+                </div>
+
+            </a>
+
+
+            <a href="Flowers.html" class="flowers-collection-box">
+
+                <div>
+                    <span class="flowers-collection-category">
+                        Modern Collection
+                    </span>
+
+                    <h3>
+                        Minimalist Florals
+                    </h3>
+
+                    <p>
+                        Refined arrangements created with quiet
+                        elegance and considered simplicity.
+                    </p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <a href="Flowers.html" class="flowers-collection-choice">
+
+            <div>
+                <span class="flowers-collection-category">
+                    Personalised Collection
+                </span>
+
+                <h3>
+                    Florist's Choice
+                </h3>
+
+                <p>
+                    Let our florists create something unexpected,
+                    beautiful and entirely inspired by the season.
+                </p>
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+        <section class="flowers-products" aria-labelledby="flowers-products-title">
+            <div class="flowers-products-inner container">
+                <header class="flowers-products-header">
+                    <div>
+                        <p class="flowers-products-eyebrow">— The Flower Collection <span aria-hidden="true">•</span></p>
+                        <h2 id="flowers-products-title">Find Something Beautiful</h2>
+                    </div>
+                    <p class="flowers-products-intro">A considered collection of florist-designed arrangements, seasonal favourites and timeless blooms, prepared with care for every kind of occasion.</p>
+                </header>
+                <div class="flowers-products-toolbar">
+                    <nav class="flowers-products-filters" aria-label="Filter flowers">
+                        <a class="is-active" href="Flowers.html" aria-current="page">All</a>
+                        <a href="#signature">Signature</a><a href="#seasonal">Seasonal</a><a href="#roses">Roses</a><a href="#wildflowers">Wildflowers</a><a href="#florists-choice">Florist's Choice</a>
+                    </nav>
+                    <label class="flowers-products-sort" for="flowers-products-sort-select"><span>Sort by</span><select id="flowers-products-sort-select" name="sort"><option>Featured</option><option>Price: Low to High</option><option>Price: High to Low</option><option>Newest</option></select></label>
+                </div>
+                <div class="flowers-products-grid">
+                    <article class="flowers-products-card" id="signature"><a class="flowers-products-media" href="Flowers.html" aria-label="Discover The Atelier Rose"><img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=900&q=85" alt="The Atelier Rose arrangement with garden roses and soft greenery" loading="lazy" width="900" height="1125"></a><div class="flowers-products-info"><span class="flowers-products-category">Signature Collection</span><h3>The Atelier Rose</h3><p>Sculptural garden roses with delicate seasonal blooms and soft greenery.</p><div class="flowers-products-meta"><span>$125</span><a href="Flowers.html">Discover Arrangement <span aria-hidden="true">→</span></a></div></div></article>
+                    <article class="flowers-products-card" id="seasonal"><a class="flowers-products-media" href="Flowers.html" aria-label="Discover The Soft Garden"><img src="https://images.unsplash.com/photo-1487070183336-b863922373d4?auto=format&fit=crop&w=900&q=85" alt="The Soft Garden arrangement in blush and ivory tones" loading="lazy" width="900" height="1125"></a><div class="flowers-products-info"><span class="flowers-products-category">Seasonal Collection</span><h3>The Soft Garden</h3><p>Romantic garden blooms gathered in soft blush and ivory tones.</p><div class="flowers-products-meta"><span>$95</span><a href="Flowers.html">Discover Arrangement <span aria-hidden="true">→</span></a></div></div></article>
+                    <article class="flowers-products-card" id="wildflowers"><a class="flowers-products-media" href="Flowers.html" aria-label="Discover Morning Meadow"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=85" alt="Morning Meadow arrangement of fresh seasonal stems" loading="lazy" width="900" height="1125"></a><div class="flowers-products-info"><span class="flowers-products-category">Everyday Flowers</span><h3>Morning Meadow</h3><p>Fresh seasonal stems arranged in a naturally relaxed composition.</p><div class="flowers-products-meta"><span>$79</span><a href="Flowers.html">Discover Arrangement <span aria-hidden="true">→</span></a></div></div></article>
+                    <article class="flowers-products-card" id="roses"><a class="flowers-products-media" href="Flowers.html" aria-label="Discover Blush Romance"><img src="https://images.unsplash.com/photo-1495231916356-a86217efff12?auto=format&fit=crop&w=900&q=85" alt="Blush Romance bouquet of soft pink roses" loading="lazy" width="900" height="1125"></a><div class="flowers-products-info"><span class="flowers-products-category">Roses</span><h3>Blush Romance</h3><p>Soft blush roses paired with delicate textures and graceful greenery.</p><div class="flowers-products-meta"><span>$109</span><a href="Flowers.html">Discover Arrangement <span aria-hidden="true">→</span></a></div></div></article>
+                    <article class="flowers-products-card" id="florists-choice"><a class="flowers-products-media" href="Flowers.html" aria-label="Discover The Wildflower Study"><img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=900&q=85" alt="The Wildflower Study arrangement inspired by the changing season" loading="lazy" width="900" height="1125"></a><div class="flowers-products-info"><span class="flowers-products-category">Florist's Choice</span><h3>The Wildflower Study</h3><p>A naturally expressive arrangement inspired by the changing season.</p><div class="flowers-products-meta"><span>$99</span><a href="Flowers.html">Discover Arrangement <span aria-hidden="true">→</span></a></div></div></article>
+                    <article class="flowers-products-card"><a class="flowers-products-media" href="Flowers.html" aria-label="Discover The Botanical Edit"><img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=900&q=85" alt="The Botanical Edit arrangement with textural greenery" loading="lazy" width="900" height="1125"></a><div class="flowers-products-info"><span class="flowers-products-category">Signature Collection</span><h3>The Botanical Edit</h3><p>Textural greenery and seasonal flowers brought together with quiet elegance.</p><div class="flowers-products-meta"><span>$115</span><a href="Flowers.html">Discover Arrangement <span aria-hidden="true">→</span></a></div></div></article>
+                    <article class="flowers-products-card"><a class="flowers-products-media" href="Flowers.html" aria-label="Discover Garden Celebration"><img src="https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&w=900&q=85" alt="Garden Celebration arrangement of lively seasonal blooms" loading="lazy" width="900" height="1125"></a><div class="flowers-products-info"><span class="flowers-products-category">Congratulations</span><h3>Garden Celebration</h3><p>Lively seasonal blooms designed to bring joy to meaningful occasions.</p><div class="flowers-products-meta"><span>$89</span><a href="Flowers.html">Discover Arrangement <span aria-hidden="true">→</span></a></div></div></article>
+                    <article class="flowers-products-card"><a class="flowers-products-media" href="Flowers.html" aria-label="Discover Ivory Garden"><img src="https://images.pexels.com/photos/37381924/pexels-photo-37381924.jpeg" alt="Ivory Garden arrangement of refined white blooms" loading="lazy" width="900" height="1125"></a><div class="flowers-products-info"><span class="flowers-products-category">Minimalist Florals</span><h3>Ivory Garden</h3><p>Soft ivory blooms arranged in a refined and contemporary composition.</p><div class="flowers-products-meta"><span>$105</span><a href="Flowers.html">Discover Arrangement <span aria-hidden="true">→</span></a></div></div></article>
+                    <article class="flowers-products-card"><a class="flowers-products-media" href="Flowers.html" aria-label="Discover Seasonal Bloom"><img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=900&q=85" alt="Seasonal Bloom arrangement of fresh florist-selected flowers" loading="lazy" width="900" height="1125"></a><div class="flowers-products-info"><span class="flowers-products-category">Seasonal Collection</span><h3>Seasonal Bloom</h3><p>A florist-designed arrangement inspired by the freshest flowers available.</p><div class="flowers-products-meta"><span>$85</span><a href="Flowers.html">Discover Arrangement <span aria-hidden="true">→</span></a></div></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="flowers-delivery" aria-labelledby="flowers-delivery-title">
+
+    <div class="flowers-delivery-main">
+
+        <div class="flowers-delivery-media">
+            <img
+                src="https://images.pexels.com/photos/6764332/pexels-photo-6764332.jpeg"
+                alt="Beautiful floral arrangement carefully prepared for delivery"
+                loading="lazy"
+            >
+        </div>
+
+
+        <div class="flowers-delivery-content">
+
+            <span class="section-label">
+                — BEAUTIFULLY DELIVERED •
+            </span>
+
+            <h2 id="flowers-delivery-title">
+                Beautiful Flowers, Delivered Today
+            </h2>
+
+            <p class="flowers-delivery-intro">
+                From our floral studio to their door, every arrangement is
+                prepared, wrapped and delivered with the same care that goes
+                into creating it.
+            </p>
+
+            <div class="flowers-delivery-divider"></div>
+
+            <a href="Contact.html" class="flowers-delivery-button">
+                Check Delivery Availability
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="flowers-delivery-services">
+
+        <div class="flowers-delivery-service">
+
+            <div class="flowers-delivery-icon" aria-hidden="true">
+                <i class="fa-regular fa-clock"></i>
+            </div>
+
+            <div class="flowers-delivery-service-content">
+
+                <h3>
+                    Same-Day Delivery
+                </h3>
+
+                <p>
+                    Thoughtfully prepared for orders placed within our
+                    delivery window.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="flowers-delivery-service">
+
+            <div class="flowers-delivery-icon" aria-hidden="true">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+
+            <div class="flowers-delivery-service-content">
+
+                <h3>
+                    Florist Designed
+                </h3>
+
+                <p>
+                    Every arrangement is created by our floral team.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="flowers-delivery-service">
+
+            <div class="flowers-delivery-icon" aria-hidden="true">
+                <i class="fa-solid fa-gift"></i>
+            </div>
+
+            <div class="flowers-delivery-service-content">
+
+                <h3>
+                    Beautifully Presented
+                </h3>
+
+                <p>
+                    Wrapped and finished ready to make an impression.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="flowers-delivery-note">
+        Delivery availability varies by location and order time.
+    </div>
+
+</section>
+<section class="flowers-final-cta">
+    <div class="flowers-final-cta-inner">
+
+        <div class="flowers-final-cta-left">
+            <span class="flowers-final-cta-label">— SEND SOMETHING BEAUTIFUL •</span>
+
+            <span class="flowers-final-cta-accent"></span>
+
+            <h2 class="flowers-final-cta-title">
+                Send Something Beautiful.
+            </h2>
+
+            <p class="flowers-final-cta-description">
+                For the moments that matter, the people that matter,
+                and everything worth putting into words.
+            </p>
+        </div>
+
+        <div class="flowers-final-cta-right">
+            <span class="flowers-final-cta-eyebrow">
+                FOR THE MOMENTS THAT MATTER
+            </span>
+
+            <div class="flowers-final-cta-actions">
+                <a href="Flowers.html" class="flowers-final-cta-button flowers-final-cta-button-primary">
+                    Shop the Collection
+                </a>
+
+                <a href="Contact.html" class="flowers-final-cta-button flowers-final-cta-button-secondary">
+                    Speak With Our Florists
+                </a>
+            </div>
+
+            <p class="flowers-final-cta-note">
+                Same-day delivery · Florist designed · Thoughtfully presented
+            </p>
+        </div>
+
+    </div>
+</section>
+    </main>
+
+
+ <footer class="site-footer" id="site-footer">
+        <section class="footer-newsletter" aria-labelledby="footer-cta-title">
+            <div class="container footer-cta-grid">
+                <div class="footer-cta-copy">
+                    <p class="footer-eyebrow">The floral journal <span aria-hidden="true">•</span></p>
+                    <h2 id="footer-cta-title">Let Every Moment Bloom Beautifully.</h2>
+                    <p>From thoughtful everyday gestures to unforgettable celebrations, our florists create arrangements designed to make every moment feel extraordinary.</p>
+                </div>
+                <div class="newsletter-panel">
+                    <h3>Join the Floral Journal</h3>
+                    <p>Seasonal arrangements, floral inspiration and thoughtful gifting ideas, delivered occasionally.</p>
+                    <form class="newsletter-form" data-provider="replace-with-your-form-action" novalidate>
+                        <label for="newsletter-email">Email address</label>
+                        <div class="newsletter-field">
+                            <input id="newsletter-email" name="email" type="email" placeholder="Your email address" autocomplete="email" required aria-describedby="newsletter-note newsletter-status">
+                            <button type="submit">Join the Journal <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                        <p class="newsletter-note" id="newsletter-note">By subscribing, you agree to receive occasional floral inspiration and updates.</p>
+                        <p class="newsletter-status" id="newsletter-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-main">
+            <div class="container footer-content">
+                <section class="footer-brand" aria-labelledby="footer-brand-name">
+                    <a class="footer-logo" href="Homepage1.html" aria-label="Bloom and Petal Floral Studio home">
+                        <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-spa"></i></span>
+                        <span class="brand-copy">
+                            <span class="brand-name" id="footer-brand-name">Bloom <em>&amp;</em> Petal</span>
+                            <span class="brand-tagline">Floral Studio</span>
+                        </span>
+                    </a>
+                    <p>Thoughtfully designed flowers for meaningful moments, beautifully arranged and delivered with care.</p>
+                    <div class="footer-socials" aria-label="Follow Bloom and Petal">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Pinterest"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                    </div>
+                </section>
+
+                <nav class="footer-nav-group" aria-labelledby="footer-explore-title">
+                    <div class="footer-group-heading">
+                        <h3 id="footer-explore-title">Explore</h3>
+                        <button class="footer-group-toggle" type="button" aria-label="Toggle Explore links" aria-expanded="true" aria-controls="footer-explore-links"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="footer-group-content" id="footer-explore-links">
+                        <a class="footer-link" href="Homepage1.html">Home</a>
+                        <a class="footer-link" href="Flowers.html">Flowers</a>
+                        <a class="footer-link" href="Flowers.html">Collections</a>
+                        <a class="footer-link" href="About.html">About</a>
+                        <a class="footer-link" href="Blog.html">Our Journal</a>
+                        <a class="footer-link" href="Contact.html">Contact</a>
+                    </div>
+                </nav>
+
+                <nav class="footer-nav-group" aria-labelledby="footer-occasions-title">
+                    <div class="footer-group-heading">
+                        <h3 id="footer-occasions-title">Occasions</h3>
+                        <button class="footer-group-toggle" type="button" aria-label="Toggle Occasions links" aria-expanded="true" aria-controls="footer-occasion-links"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="footer-group-content" id="footer-occasion-links">
+                        <a class="footer-link" href="Occations.html">Birthday</a>
+                        <a class="footer-link" href="Occations.html">Anniversary</a>
+                        <a class="footer-link" href="Occations.html">Wedding</a>
+                        <a class="footer-link" href="Occations.html">Congratulations</a>
+                        <a class="footer-link" href="Occations.html">Sympathy</a>
+                        <a class="footer-link" href="Occations.html">Thank You</a>
+                    </div>
+                </nav>
+
+                <nav class="footer-nav-group" aria-labelledby="footer-services-title">
+                    <div class="footer-group-heading">
+                        <h3 id="footer-services-title">Services</h3>
+                        <button class="footer-group-toggle" type="button" aria-label="Toggle Services links" aria-expanded="true" aria-controls="footer-service-links"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="footer-group-content" id="footer-service-links">
+                        <a class="footer-link" href="Services.html">Same-Day Delivery</a>
+                        <a class="footer-link" href="Services.html">Custom Arrangements</a>
+                        <a class="footer-link" href="Services.html">Wedding Flowers</a>
+                        <a class="footer-link" href="Services.html">Event Florals</a>
+                        <a class="footer-link" href="Services.html">Corporate Flowers</a>
+                        <a class="footer-link" href="Services.html">Flower Subscriptions</a>
+                    </div>
+                </nav>
+
+                <section class="footer-contact" aria-labelledby="footer-contact-title">
+                    <div class="footer-group-heading">
+                        <h3 id="footer-contact-title">Visit Us</h3>
+                        <button class="footer-group-toggle" type="button" aria-label="Toggle studio details" aria-expanded="true" aria-controls="footer-contact-details"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="footer-group-content footer-contact-details" id="footer-contact-details">
+                        <p class="footer-studio-name">Bloom &amp; Petal Floral Studio</p>
+                        <a class="footer-contact-item" href="https://maps.google.com/?q=123+Garden+Avenue+Hyderabad+India" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>123 Garden Avenue<br>Hyderabad, India</span></a>
+                        <p class="footer-contact-item"><i class="fa-regular fa-clock" aria-hidden="true"></i><span>Mon – Sat<br>9:00 AM – 7:00 PM</span></p>
+                        <a class="footer-contact-item" href="tel:+919876543210"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>+91 98765 43210</span></a>
+                        <a class="footer-contact-item" href="mailto:hello@bloomandpetal.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i><span>hello@bloomandpetal.com</span></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>© 2026 Bloom &amp; Petal. All rights reserved.</p>
+                <nav class="footer-legal" aria-label="Legal navigation">
+                    <a href="#site-footer">Privacy Policy</a>
+                    <a href="#site-footer">Terms &amp; Conditions</a>
+                    <a href="#site-footer">Cookie Policy</a>
+                    <a href="#site-footer">Accessibility</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" hidden>
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
+
+

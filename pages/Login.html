@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in to your private Bloom &amp; Petal Floral Studio account.">
+    <title>Welcome Back | Bloom &amp; Petal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="login-page-body">
+    <a class="skip-link" href="#login-main">Skip to sign in</a>
+    <div class="login-page-utilities" aria-label="Page utilities">
+        <button class="login-page-utility theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme">
+            <i class="fa-regular fa-moon icon-moon" aria-hidden="true"></i><i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+        </button>
+        <span class="login-page-utility-divider" aria-hidden="true"></span>
+        <button class="login-page-utility rtl-toggle" type="button" aria-pressed="false" title="Switch text direction">RTL</button>
+    </div>
+    <main class="login-page" id="login-main">
+        <section class="login-page-image" aria-label="Bloom &amp; Petal floral studio">
+            <img src="../assets/images/hero/hero-floral-studio.webp" alt="A richly arranged floral display in the Bloom &amp; Petal studio">
+            <div class="login-page-image-overlay"></div>
+            <div class="login-page-image-copy">
+                <p>Thoughtfully created.<br>Beautifully remembered.</p>
+            </div>
+        </section>
+        <section class="login-page-panel" aria-labelledby="login-title">
+            <div class="login-page-content">
+                <div class="login-page-mobile-brand">
+                    <a class="brand" href="Homepage1.html" aria-label="Bloom and Petal Floral Studio home">
+                        <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-spa"></i></span>
+                        <span class="brand-copy"><span class="brand-name">Bloom <em>&amp;</em> Petal</span><span class="brand-tagline">Floral Studio</span></span>
+                    </a>
+                    <span>Private Studio</span>
+                </div>
+                <div class="login-page-heading">
+                    <p class="login-page-label">Welcome Back</p>
+                    <span class="login-page-accent" aria-hidden="true"></span>
+                    <h1 id="login-title">Welcome Back to Bloom &amp; Petal.</h1>
+                    <p>Sign in to continue to your private floral studio account.</p>
+                </div>
+                <form class="login-page-form" action="#" method="post">
+                    <div class="login-page-field"><label for="login-email">Email Address</label><input id="login-email" name="email" type="email" placeholder="Your email address" autocomplete="email" required></div>
+                    <div class="login-page-field login-page-password"><label for="login-password">Password</label><div><input id="login-password" name="password" type="password" placeholder="Your password" autocomplete="current-password" required><button type="button" class="login-page-password-toggle" aria-label="Show password"><i class="fa-regular fa-eye" aria-hidden="true"></i></button></div></div>
+                    <div class="login-page-options"><label><input type="checkbox" name="remember"> <span>Remember me</span></label><a href="#forgot-password">Forgot Password?</a></div>
+                    <button class="login-page-submit" type="submit">Sign In</button>
+                </form>
+                <p class="login-page-create">New to Bloom &amp; Petal? <a href="Register.html">Create an Account</a></p>
+                <div class="login-page-or"><span>Or</span></div>
+                <a class="login-page-guest" href="Homepage1.html">Continue as Guest</a>
+                <p class="login-page-note">Private access to your floral orders, appointments and preferences.</p>
+            </div>
+        </section>
+    </main>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        (() => {
+            const toggle = document.querySelector('.login-page-password-toggle');
+            const input = document.querySelector('#login-password');
+            if (!toggle || !input) return;
+            toggle.addEventListener('click', () => {
+                const visible = input.type === 'text';
+                input.type = visible ? 'password' : 'text';
+                toggle.setAttribute('aria-label', visible ? 'Show password' : 'Hide password');
+                toggle.innerHTML = `<i class="fa-regular fa-eye${visible ? '' : '-slash'}" aria-hidden="true"></i>`;
+            });
+        })();
+    </script>
+</body>
+</html>

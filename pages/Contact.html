@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bloom & Petal is a modern floral studio for beautiful fresh flowers and thoughtful gifting.">
+    <title>Bloom &amp; Petal | Floral Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" type="image/webp" href="../assets/images/hero/hero-floral-studio.webp" imagesrcset="../assets/images/hero/hero-floral-studio.webp 1920w" imagesizes="100vw">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="site-header">
+        <div class="header-container container">
+            <a class="brand" href="Homepage1.html" aria-label="Bloom and Petal Floral Studio home">
+                <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-spa"></i></span>
+                <span class="brand-copy">
+                    <span class="brand-name">Bloom <em>&amp;</em> Petal</span>
+                    <span class="brand-tagline">Floral Studio</span>
+                </span>
+            </a>
+
+            <nav class="primary-navigation" aria-label="Primary navigation">
+                <ul class="nav-list">
+                    <li class="nav-item has-dropdown">
+                        <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" aria-controls="home-submenu">
+                            Home <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="home-dropdown" id="home-submenu" aria-label="Home pages">
+                            <a class="home-option is-current" href="Homepage1.html" aria-current="page">
+                                <span>Home Page 1</span>
+                                <small>Fresh Flower Shop</small>
+                            </a>
+                            <a class="home-option" href="Homepage2.html">
+                                <span>Home Page 2</span>
+                                <small>Luxury Floral Studio</small>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a class="nav-link" href="Flowers.html">Flowers</a></li>
+                    <li><a class="nav-link" href="Occations.html">Occasions</a></li>
+                    <li><a class="nav-link" href="Services.html">Services</a></li>
+                    <li><a class="nav-link" href="About.html">About</a></li>
+                    <li><a class="nav-link" href="Blog.html">Blog</a></li>
+                    <li><a class="nav-link" href="Contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-button theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme">
+                    <i class="fa-regular fa-moon icon-moon" aria-hidden="true"></i>
+                    <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+                </button>
+                <button class="rtl-toggle" type="button" aria-pressed="false" title="Switch text direction">RTL</button>
+                <a class="icon-button cart-button" href="Flowers.html" aria-label="Shopping bag, 2 items">
+                    <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                    <span class="cart-count" aria-hidden="true">2</span>
+                </a>
+                <a class="btn btn-outline header-login" href="Login.html">Login</a>
+            </div>
+
+            <div class="mobile-actions">
+                <a class="icon-button cart-button" href="Flowers.html" aria-label="Shopping bag, 2 items">
+                    <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                    <span class="cart-count" aria-hidden="true">2</span>
+                </a>
+                <button class="icon-button menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu" hidden>
+            <div class="container mobile-menu-inner">
+                <nav aria-label="Mobile navigation">
+                    <ul class="mobile-nav-list">
+                        <li class="mobile-home-group">
+                            <span class="mobile-nav-heading">Home</span>
+                            <a href="Homepage1.html" aria-current="page">Home Page 1 <small>Fresh Flower Shop</small></a>
+                            <a href="Homepage2.html">Home Page 2 <small>Luxury Floral Studio</small></a>
+                        </li>
+                        <li><a href="Flowers.html">Flowers</a></li>
+                        <li><a href="Occations.html">Occasions</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-controls">
+                    <button class="mobile-control theme-toggle" type="button" aria-label="Switch to dark mode">
+                        <span>Dark mode</span>
+                        <i class="fa-regular fa-moon icon-moon" aria-hidden="true"></i>
+                        <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+                    </button>
+                    <button class="mobile-control rtl-toggle" type="button" aria-pressed="false">
+                        <span>Right-to-left layout</span><strong>RTL</strong>
+                    </button>
+                    <a class="btn btn-primary mobile-login" href="Login.html">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="contact-hero" aria-labelledby="contact-hero-title">
+            <div class="contact-hero-inner container">
+                <p class="contact-hero-label">Contact the Studio <span aria-hidden="true">•</span></p>
+                <span class="contact-hero-accent" aria-hidden="true"></span>
+                <h1 id="contact-hero-title">Let’s Create Something Beautiful.</h1>
+                <p class="contact-hero-intro">Whether you are looking for a thoughtful bouquet, planning a celebration or creating something entirely your own, we would love to hear from you.</p>
+                <p class="contact-hero-detail">Private floral enquiries <span aria-hidden="true">·</span> Weddings &amp; events <span aria-hidden="true">·</span> Bespoke arrangements</p>
+            </div>
+        </section>
+        <section class="contact-information" aria-labelledby="contact-information-title">
+            <div class="contact-information-layout container">
+                <div class="contact-information-copy"><p class="contact-information-label">Contact Information <span aria-hidden="true">•</span></p><span class="contact-information-accent" aria-hidden="true"></span><h2 id="contact-information-title">We’d Love to Hear From You.</h2><p>Visit the studio, call our team or send a note. We’ll help you find the right flowers for your moment.</p></div>
+                <address class="contact-directory">
+                    <div><span>Studio</span><p>123 Garden Avenue<br>Hyderabad, India</p></div>
+                    <div><span>Phone</span><a href="tel:+919876543210">+91 98765 43210</a></div>
+                    <div><span>Email</span><a href="mailto:hello@bloomandpetal.com">hello@bloomandpetal.com</a></div>
+                    <div><span>Opening Hours</span><p>Monday – Saturday<br>9:00 AM – 7:00 PM</p></div>
+                </address>
+            </div>
+        </section>
+     
+<section class="private-enquiry-section">
+    <div class="private-enquiry-container">
+
+        <div class="private-enquiry-media">
+            <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1400&q=85" alt="Beautiful floral arrangement">
+        </div>
+
+        <div class="private-enquiry-content">
+
+            <div class="private-enquiry-header">
+                <span class="private-enquiry-label">PRIVATE FLORAL ENQUIRY</span>
+                <span class="private-enquiry-accent"></span>
+                <h2 class="private-enquiry-title">Tell Us About Your Moment.</h2>
+                <p class="private-enquiry-intro">
+                    Whether you are planning a celebration, sending something meaningful
+                    or looking for a completely bespoke arrangement, tell us a little
+                    about what you have in mind.
+                </p>
+            </div>
+
+            <form class="private-enquiry-form">
+
+                <div class="private-enquiry-field">
+                    <label for="enquiry-name">Name</label>
+                    <input type="text" id="enquiry-name" name="name" placeholder="Your name">
+                </div>
+
+                <div class="private-enquiry-row">
+                    <div class="private-enquiry-field">
+                        <label for="enquiry-email">Email</label>
+                        <input type="email" id="enquiry-email" name="email" placeholder="Your email">
+                    </div>
+
+                    <div class="private-enquiry-field">
+                        <label for="enquiry-phone">Phone</label>
+                        <input type="tel" id="enquiry-phone" name="phone" placeholder="Your phone">
+                    </div>
+                </div>
+
+                <div class="private-enquiry-row">
+                    <div class="private-enquiry-field">
+                        <label for="enquiry-occasion">Occasion</label>
+                        <select id="enquiry-occasion" name="occasion">
+                            <option value="">Select occasion</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="anniversary">Anniversary</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="congratulations">Congratulations</option>
+                            <option value="sympathy">Sympathy</option>
+                            <option value="just-because">Just Because</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="private-enquiry-field">
+                        <label for="enquiry-date">Preferred Date</label>
+                        <input type="date" id="enquiry-date" name="date">
+                    </div>
+                </div>
+
+                <div class="private-enquiry-field">
+                    <label for="enquiry-service">Service</label>
+                    <select id="enquiry-service" name="service">
+                        <option value="">Select service</option>
+                        <option value="bespoke">Bespoke Arrangement</option>
+                        <option value="wedding-events">Wedding &amp; Event Florals</option>
+                        <option value="floral-gifting">Floral Gifting</option>
+                        <option value="corporate">Corporate &amp; Hospitality</option>
+                        <option value="ongoing">Ongoing Floral Styling</option>
+                    </select>
+                </div>
+
+                <div class="private-enquiry-field">
+                    <label for="enquiry-message">Tell Us More</label>
+                    <textarea id="enquiry-message" name="message" placeholder="Tell us about your flowers, occasion or ideas..."></textarea>
+                </div>
+
+                <button type="submit" class="private-enquiry-submit">
+                    Send Enquiry
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
+        <section class="contact-studio" aria-labelledby="contact-studio-title">
+            <div class="contact-studio-layout container">
+                <div class="contact-studio-map"><iframe title="Map showing Bloom and Petal Floral Studio" src="https://www.google.com/maps?q=123+Garden+Avenue+Hyderabad+India&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                <div class="contact-studio-copy"><p class="contact-studio-label">Visit the Studio <span aria-hidden="true">•</span></p><span class="contact-studio-accent" aria-hidden="true"></span><h2 id="contact-studio-title">Find Your Way to Bloom &amp; Petal.</h2><address><p>123 Garden Avenue<br>Hyderabad, India</p><p>Monday – Saturday<br>9:00 AM – 7:00 PM</p><p>Appointments are welcome for weddings, events and bespoke floral consultations.</p></address><a class="contact-studio-directions" href="https://www.google.com/maps/search/?api=1&query=123+Garden+Avenue+Hyderabad+India" target="_blank" rel="noopener noreferrer">Get Directions</a></div>
+            </div>
+        </section>
+        <section class="contact-faq" aria-labelledby="contact-faq-title">
+            <div class="contact-faq-layout container">
+                <div class="contact-faq-intro"><p class="contact-faq-label">A Few Questions <span aria-hidden="true">•</span></p><span class="contact-faq-accent" aria-hidden="true"></span><h2 id="contact-faq-title">Before You Get in Touch.</h2><p>A little helpful context before you send a note to the studio.</p></div>
+                <div class="contact-faq-list">
+                    <details open><summary>How quickly will I hear back from the studio?</summary><p>We usually reply within one working day. For time-sensitive enquiries, please mention your date and preferred contact method.</p></details>
+                    <details><summary>Can I request a bespoke arrangement?</summary><p>Yes. Share the feeling, palette or recipient with us and our florists will create a considered arrangement around your story.</p></details>
+                    <details><summary>Do you provide wedding and event flowers?</summary><p>We design flowers for intimate gatherings, weddings, celebrations and larger event environments.</p></details>
+                    <details><summary>Do you offer same-day delivery?</summary><p>Same-day delivery is available in selected areas when your order is placed before our daily cut-off time.</p></details>
+                    <details><summary>Can I visit the studio in person?</summary><p>We welcome studio visits by appointment so our team can give you their full attention.</p></details>
+                    <details><summary>How far in advance should I book wedding flowers?</summary><p>We recommend enquiring three to six months ahead, especially for peak-season dates.</p></details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+ <footer class="site-footer" id="site-footer">
+        <section class="footer-newsletter" aria-labelledby="footer-cta-title">
+            <div class="container footer-cta-grid">
+                <div class="footer-cta-copy">
+                    <p class="footer-eyebrow">The floral journal <span aria-hidden="true">•</span></p>
+                    <h2 id="footer-cta-title">Let Every Moment Bloom Beautifully.</h2>
+                    <p>From thoughtful everyday gestures to unforgettable celebrations, our florists create arrangements designed to make every moment feel extraordinary.</p>
+                </div>
+                <div class="newsletter-panel">
+                    <h3>Join the Floral Journal</h3>
+                    <p>Seasonal arrangements, floral inspiration and thoughtful gifting ideas, delivered occasionally.</p>
+                    <form class="newsletter-form" data-provider="replace-with-your-form-action" novalidate>
+                        <label for="newsletter-email">Email address</label>
+                        <div class="newsletter-field">
+                            <input id="newsletter-email" name="email" type="email" placeholder="Your email address" autocomplete="email" required aria-describedby="newsletter-note newsletter-status">
+                            <button type="submit">Join the Journal <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                        <p class="newsletter-note" id="newsletter-note">By subscribing, you agree to receive occasional floral inspiration and updates.</p>
+                        <p class="newsletter-status" id="newsletter-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-main">
+            <div class="container footer-content">
+                <section class="footer-brand" aria-labelledby="footer-brand-name">
+                    <a class="footer-logo" href="Homepage1.html" aria-label="Bloom and Petal Floral Studio home">
+                        <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-spa"></i></span>
+                        <span class="brand-copy">
+                            <span class="brand-name" id="footer-brand-name">Bloom <em>&amp;</em> Petal</span>
+                            <span class="brand-tagline">Floral Studio</span>
+                        </span>
+                    </a>
+                    <p>Thoughtfully designed flowers for meaningful moments, beautifully arranged and delivered with care.</p>
+                    <div class="footer-socials" aria-label="Follow Bloom and Petal">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Pinterest"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                    </div>
+                </section>
+
+                <nav class="footer-nav-group" aria-labelledby="footer-explore-title">
+                    <div class="footer-group-heading">
+                        <h3 id="footer-explore-title">Explore</h3>
+                        <button class="footer-group-toggle" type="button" aria-label="Toggle Explore links" aria-expanded="true" aria-controls="footer-explore-links"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="footer-group-content" id="footer-explore-links">
+                        <a class="footer-link" href="Homepage1.html">Home</a>
+                        <a class="footer-link" href="Flowers.html">Flowers</a>
+                        <a class="footer-link" href="Flowers.html">Collections</a>
+                        <a class="footer-link" href="About.html">About</a>
+                        <a class="footer-link" href="Blog.html">Our Journal</a>
+                        <a class="footer-link" href="Contact.html">Contact</a>
+                    </div>
+                </nav>
+
+                <nav class="footer-nav-group" aria-labelledby="footer-occasions-title">
+                    <div class="footer-group-heading">
+                        <h3 id="footer-occasions-title">Occasions</h3>
+                        <button class="footer-group-toggle" type="button" aria-label="Toggle Occasions links" aria-expanded="true" aria-controls="footer-occasion-links"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="footer-group-content" id="footer-occasion-links">
+                        <a class="footer-link" href="Occations.html">Birthday</a>
+                        <a class="footer-link" href="Occations.html">Anniversary</a>
+                        <a class="footer-link" href="Occations.html">Wedding</a>
+                        <a class="footer-link" href="Occations.html">Congratulations</a>
+                        <a class="footer-link" href="Occations.html">Sympathy</a>
+                        <a class="footer-link" href="Occations.html">Thank You</a>
+                    </div>
+                </nav>
+
+                <nav class="footer-nav-group" aria-labelledby="footer-services-title">
+                    <div class="footer-group-heading">
+                        <h3 id="footer-services-title">Services</h3>
+                        <button class="footer-group-toggle" type="button" aria-label="Toggle Services links" aria-expanded="true" aria-controls="footer-service-links"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="footer-group-content" id="footer-service-links">
+                        <a class="footer-link" href="Services.html">Same-Day Delivery</a>
+                        <a class="footer-link" href="Services.html">Custom Arrangements</a>
+                        <a class="footer-link" href="Services.html">Wedding Flowers</a>
+                        <a class="footer-link" href="Services.html">Event Florals</a>
+                        <a class="footer-link" href="Services.html">Corporate Flowers</a>
+                        <a class="footer-link" href="Services.html">Flower Subscriptions</a>
+                    </div>
+                </nav>
+
+                <section class="footer-contact" aria-labelledby="footer-contact-title">
+                    <div class="footer-group-heading">
+                        <h3 id="footer-contact-title">Visit Us</h3>
+                        <button class="footer-group-toggle" type="button" aria-label="Toggle studio details" aria-expanded="true" aria-controls="footer-contact-details"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="footer-group-content footer-contact-details" id="footer-contact-details">
+                        <p class="footer-studio-name">Bloom &amp; Petal Floral Studio</p>
+                        <a class="footer-contact-item" href="https://maps.google.com/?q=123+Garden+Avenue+Hyderabad+India" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>123 Garden Avenue<br>Hyderabad, India</span></a>
+                        <p class="footer-contact-item"><i class="fa-regular fa-clock" aria-hidden="true"></i><span>Mon – Sat<br>9:00 AM – 7:00 PM</span></p>
+                        <a class="footer-contact-item" href="tel:+919876543210"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>+91 98765 43210</span></a>
+                        <a class="footer-contact-item" href="mailto:hello@bloomandpetal.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i><span>hello@bloomandpetal.com</span></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>© 2026 Bloom &amp; Petal. All rights reserved.</p>
+                <nav class="footer-legal" aria-label="Legal navigation">
+                    <a href="#site-footer">Privacy Policy</a>
+                    <a href="#site-footer">Terms &amp; Conditions</a>
+                    <a href="#site-footer">Cookie Policy</a>
+                    <a href="#site-footer">Accessibility</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" hidden>
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
+
+

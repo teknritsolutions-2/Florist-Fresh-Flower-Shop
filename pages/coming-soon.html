@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Something beautiful is about to bloom at Bloom &amp; Petal Floral Studio.">
+    <title>Coming Soon | Bloom &amp; Petal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="coming-page-body">
+    <a class="skip-link" href="#coming-main">Skip to coming soon content</a>
+    <div class="coming-page-utilities" aria-label="Page utilities">
+        <button class="coming-page-utility theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme"><i class="fa-regular fa-moon icon-moon" aria-hidden="true"></i><i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i></button>
+        <span aria-hidden="true"></span>
+        <button class="coming-page-utility rtl-toggle" type="button" aria-pressed="false" title="Switch text direction">RTL</button>
+    </div>
+    <main class="coming-page" id="coming-main">
+        <div class="coming-page-topline">
+            <a class="brand" href="Homepage1.html" aria-label="Bloom and Petal Floral Studio home"><span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-spa"></i></span><span class="brand-copy"><span class="brand-name">Bloom <em>&amp;</em> Petal</span><span class="brand-tagline">Floral Studio</span></span></a>
+            <span class="coming-page-edition">Private preview · 2026</span>
+        </div>
+        <section class="coming-page-hero" aria-labelledby="coming-title">
+            <div class="coming-page-word" aria-hidden="true">BLOOM</div>
+            <div class="coming-page-content">
+                <p class="coming-page-label">Coming Soon</p>
+                <span class="coming-page-accent" aria-hidden="true"></span>
+                <h1 id="coming-title">Something Beautiful Is About to Bloom.</h1>
+                <p class="coming-page-intro">We are preparing something thoughtfully designed for flower lovers, meaningful moments and beautiful gifting. The next chapter of Bloom &amp; Petal is almost ready.</p>
+                <p class="coming-page-detail">A new collection <span aria-hidden="true">·</span> A fresh season <span aria-hidden="true">·</span> A little more beauty</p>
+            </div>
+        </section>
+        <section class="coming-page-countdown" aria-label="Launch countdown">
+            <div><strong data-countdown="days">12</strong><span>Days</span></div><div><strong data-countdown="hours">08</strong><span>Hours</span></div><div><strong data-countdown="minutes">42</strong><span>Minutes</span></div><div><strong data-countdown="seconds">18</strong><span>Seconds</span></div>
+        </section>
+        <section class="coming-page-signup" aria-labelledby="signup-title">
+            <div><p class="coming-page-signup-label" id="signup-title">Be First to Bloom</p><p>Leave your email and we’ll let you know when the new Bloom &amp; Petal experience is ready.</p></div>
+            <form class="coming-page-form"><label class="sr-only" for="coming-email">Email address</label><input id="coming-email" type="email" placeholder="Your email address" required><button type="submit">Notify Me</button></form>
+        </section>
+        <nav class="coming-page-links" aria-label="Studio links"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="Contact.html">Contact the Studio</a><a href="Flowers.html">Explore Flowers</a></nav>
+        <div class="coming-page-footerline"><span>Thoughtfully created. Beautifully remembered.</span></div>
+    </main>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        (() => {
+            const launch = Date.now() + (12 * 86400000) + (8 * 3600000) + (42 * 60000) + 18000;
+            const update = () => { let left = Math.max(0, launch - Date.now()); const days = Math.floor(left / 86400000); left %= 86400000; const hours = Math.floor(left / 3600000); left %= 3600000; const minutes = Math.floor(left / 60000); const seconds = Math.floor((left % 60000) / 1000); [['days', days], ['hours', hours], ['minutes', minutes], ['seconds', seconds]].forEach(([key, value]) => { const node = document.querySelector(`[data-countdown="${key}"]`); if (node) node.textContent = String(value).padStart(2, '0'); }); };
+            update(); window.setInterval(update, 1000);
+        })();
+    </script>
+</body>
+</html>
