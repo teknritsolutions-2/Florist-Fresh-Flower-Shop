@@ -1,68 +1,14 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Create your private Bloom &amp; Petal Floral Studio account.">
-    <title>Create an Account | Bloom &amp; Petal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="0; url=Flowers.html">
+    <title>Redirecting to Flowers | Bloom &amp; Petal</title>
     <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/dark-mode.css">
-    <link rel="stylesheet" href="../assets/css/rtl.css">
+    <script>window.location.replace("Flowers.html");</script>
 </head>
-<body class="login-page-body">
-    <a class="skip-link" href="#register-main">Skip to registration</a>
-    <div class="login-page-utilities" aria-label="Page utilities">
-        <button class="login-page-utility theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme"><i class="fa-regular fa-moon icon-moon" aria-hidden="true"></i><i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i></button>
-        <span class="login-page-utility-divider" aria-hidden="true"></span>
-        <button class="login-page-utility rtl-toggle" type="button" aria-pressed="false" title="Switch text direction">RTL</button>
-    </div>
-    <main class="login-page" id="register-main">
-        <section class="login-page-image" aria-label="Bloom &amp; Petal floral studio">
-            <img src="../assets/images/hero/hero-floral-studio.webp" alt="A richly arranged floral display in the Bloom &amp; Petal studio">
-            <div class="login-page-image-overlay"></div>
-            <div class="login-page-image-copy"><p>Thoughtfully created.<br>Beautifully remembered.</p></div>
-        </section>
-        <section class="login-page-panel" aria-labelledby="register-title">
-            <div class="login-page-content">
-                <div class="login-page-mobile-brand">
-                    <a class="brand" href="Homepage1.html" aria-label="Bloom and Petal Floral Studio home"><span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-spa"></i></span><span class="brand-copy"><span class="brand-name">Bloom <em>&amp;</em> Petal</span><span class="brand-tagline">Floral Studio</span></span></a>
-                    <span>Private Studio</span>
-                </div>
-                <div class="login-page-heading">
-                    <p class="login-page-label">Begin Your Journey</p>
-                    <span class="login-page-accent" aria-hidden="true"></span>
-                    <h1 id="register-title">Create Your Bloom &amp; Petal Account.</h1>
-                    <p>Save your floral preferences and keep every thoughtful order close.</p>
-                </div>
-                <form class="login-page-form" action="#" method="post">
-                    <div class="login-page-field"><label for="register-name">Full Name</label><input id="register-name" name="name" type="text" placeholder="Your full name" autocomplete="name" required></div>
-                    <div class="login-page-field"><label for="register-email">Email Address</label><input id="register-email" name="email" type="email" placeholder="Your email address" autocomplete="email" required></div>
-                    <div class="login-page-field login-page-password"><label for="register-password">Password</label><div><input id="register-password" name="password" type="password" placeholder="Create a password" autocomplete="new-password" required><button type="button" class="login-page-password-toggle" aria-label="Show password"><i class="fa-regular fa-eye" aria-hidden="true"></i></button></div></div>
-                    <div class="login-page-field login-page-password"><label for="register-confirm">Confirm Password</label><div><input id="register-confirm" name="password_confirmation" type="password" placeholder="Repeat your password" autocomplete="new-password" required><button type="button" class="login-page-password-toggle" aria-label="Show password"><i class="fa-regular fa-eye" aria-hidden="true"></i></button></div></div>
-                    <label class="register-page-agreement"><input type="checkbox" name="terms" required><span>I agree to the studio’s terms and privacy policy.</span></label>
-                    <button class="login-page-submit" type="submit">Create Account</button>
-                </form>
-                <p class="login-page-create">Already part of the studio? <a href="Login.html">Sign In</a></p>
-                <p class="login-page-note">A private space for your floral orders, appointments and preferences.</p>
-            </div>
-        </section>
-    </main>
-    <script src="../assets/js/main.js"></script>
-    <script>
-        document.querySelectorAll('.login-page-password-toggle').forEach((toggle) => {
-            toggle.addEventListener('click', () => {
-                const input = toggle.parentElement.querySelector('input');
-                const visible = input.type === 'text';
-                input.type = visible ? 'password' : 'text';
-                toggle.setAttribute('aria-label', visible ? 'Show password' : 'Hide password');
-                toggle.innerHTML = `<i class="fa-regular fa-eye${visible ? '' : '-slash'}" aria-hidden="true"></i>`;
-            });
-        });
-    </script>
+<body>
+    <p>Continue to <a href="Flowers.html">shop flowers at Bloom &amp; Petal</a>.</p>
 </body>
 </html>

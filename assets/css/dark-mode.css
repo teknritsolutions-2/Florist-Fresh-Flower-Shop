@@ -87,7 +87,7 @@
     html:not([data-theme]) .blog-final-cta { background: #182820; color: #f5f1eb; }
     html:not([data-theme]) .blog-final-cta h2 { color: #f5f1eb; }
 }
-[data-theme="dark"] .occasions-hero-content::before { background: rgb(18 23 20 / 90%); }
+[data-theme="dark"] .occasions-hero::before { background: rgb(18 23 20 / 34%); }
 
 @media (prefers-color-scheme: dark) {
     html:not([data-theme]) {
@@ -120,7 +120,7 @@
     html:not([data-theme]) .delivery-process-step span { color: #ffffff; }
     html:not([data-theme]) .delivery-cta { background: #d98f8f; color: #182820; }
     html:not([data-theme]) .delivery-cta:hover { background: #e9b7b7; color: #182820; }
-    html:not([data-theme]) .occasions-hero-content::before { background: rgb(18 23 20 / 90%); }
+    html:not([data-theme]) .occasions-hero::before { background: rgb(18 23 20 / 34%); }
 }
 [data-theme="dark"] .custom-arrangement-section {
     background: var(--color-background);
@@ -413,20 +413,20 @@
 }
 
 [data-theme="dark"] .home2-signature-category {
-    color: var(--color-accent-light);
+    color: var(--color-accent);
 }
 
 [data-theme="dark"] .home2-signature-price {
-    color: var(--color-accent-light);
+    color: var(--color-accent);
 }
 
 [data-theme="dark"] .home2-signature-link {
-    color: var(--color-accent-light);
-    border-color: var(--color-accent-light);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
 }
 
 [data-theme="dark"] .home2-signature-link:hover {
-    color: var(--color-accent-light);
+    color: var(--color-accent);
 }
 
 [data-theme="dark"] .home2-signature-featured,
@@ -1930,7 +1930,7 @@
     }
 }
 
-/* Keep every main-content section on these pages on one black dark-mode canvas. */
+/* Keep main-content sections on the shared dark canvas without clearing section images. */
 [data-theme="dark"] .occasions-hero,
 [data-theme="dark"] .occasions-directory,
 [data-theme="dark"] .occasions-process,
@@ -1956,7 +1956,7 @@
 [data-theme="dark"] .private-enquiry-section,
 [data-theme="dark"] .contact-studio,
 [data-theme="dark"] .contact-faq {
-    background: #000000;
+    background-color: var(--color-background);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1985,6 +1985,255 @@
     :root:not([data-theme="light"]) .private-enquiry-section,
     :root:not([data-theme="light"]) .contact-studio,
     :root:not([data-theme="light"]) .contact-faq {
-        background: #000000;
+        background-color: var(--color-background);
+    }
+}
+
+
+/* Shared CTA system: primary and secondary buttons stay consistent in both themes. */
+a.site-cta.site-cta-primary,
+button.site-cta.site-cta-primary,
+a.site-cta.site-cta-secondary,
+button.site-cta.site-cta-secondary {
+    display: inline-flex;
+    height: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: 0 18px;
+    border: 1px solid;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    white-space: nowrap;
+    transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+a.site-cta.site-cta-primary,
+button.site-cta.site-cta-primary {
+    border-color: var(--color-background);
+    background: var(--color-primary);
+    color: var(--color-background);
+}
+
+a.site-cta.site-cta-secondary,
+button.site-cta.site-cta-secondary {
+    border-color: var(--color-primary);
+    background: var(--color-surface);
+    color: var(--color-primary);
+}
+
+a.site-cta.site-cta-primary:hover,
+button.site-cta.site-cta-primary:hover {
+    border-color: var(--color-background);
+    background: var(--color-primary-light);
+    color: var(--color-background);
+    transform: translateY(-1px);
+}
+
+a.site-cta.site-cta-secondary:hover,
+button.site-cta.site-cta-secondary:hover {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-background);
+    transform: translateY(-1px);
+}
+
+a.site-cta.site-cta-primary > i,
+button.site-cta.site-cta-primary > i,
+a.site-cta.site-cta-secondary > i,
+button.site-cta.site-cta-secondary > i {
+    flex: 0 0 auto;
+    margin: 0;
+}
+
+a.site-cta.site-cta-primary:focus-visible,
+button.site-cta.site-cta-primary:focus-visible,
+a.site-cta.site-cta-secondary:focus-visible,
+button.site-cta.site-cta-secondary:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+
+/* Shared dark surfaces keep section canvases and card containers consistent. */
+[data-theme="dark"] :is(
+    .login-page-body,
+    .error-page,
+    .coming-page,
+    .delivery-section,
+    .blog-final-cta,
+    .occasions-final-cta,
+    .wedding-events-section,
+    .why-bloom-section,
+    .about-story-section,
+    .our-approach-section,
+    .meet-florists-section,
+    .about-final-cta,
+    .latest-journal-section,
+    .studio-notes-section,
+    .related-stories-section,
+    .small-cta-section,
+    .private-enquiry-section,
+    .home-flowers-hero,
+    .flowers-collection,
+    .flowers-products,
+    .flowers-delivery,
+    .flowers-final-cta,
+    .occasions-hero,
+    .occasions-directory,
+    .occasions-process,
+    .services-hero,
+    .services-directory,
+    .corporate-florals,
+    .blog-hero,
+    .blog-featured-story,
+    .about-hero,
+    .about-client-love,
+    .contact-hero,
+    .contact-information,
+    .contact-studio,
+    .contact-faq,
+    .custom-arrangement-section,
+    .final-cta-section,
+    .home2-bestsellers,
+    .home2-concierge,
+    .home2-difference,
+    .home2-journal,
+    .home2-final-cta,
+    .home2-signature,
+    .site-footer
+) {
+    background-color: var(--color-background);
+}
+
+[data-theme="dark"] :is(
+    .login-page-panel,
+    .hero-delivery-card,
+    .custom-arrangement-panel,
+    .custom-arrangement-option-content,
+    .custom-arrangement-message-field textarea,
+    .home2-product-media,
+    .home2-journal-media,
+    .home2-signature-featured-media,
+    .home2-signature-media,
+    .flowers-collection-featured-content,
+    .flowers-collection-box,
+    .flowers-collection-signature,
+    .flowers-collection-choice,
+    .flowers-delivery-main,
+    .flowers-delivery-content,
+    .flowers-delivery-services,
+    .occasions-directory-featured,
+    .occasions-directory-item,
+    .occasions-directory-wide,
+    .occasions-directory-closing,
+    .occasions-directory-closing-content,
+    .wedding-events-content,
+    .why-bloom-card,
+    .about-story-content,
+    .our-approach-marker,
+    .meet-florist-info
+) {
+    background-color: var(--color-surface);
+}
+
+[data-theme="dark"] .site-footer {
+    --footer-background: var(--color-background);
+    --footer-ink: var(--color-background);
+}
+
+@media (prefers-color-scheme: dark) {
+:root:not([data-theme="light"]) :is(
+    .login-page-body,
+    .error-page,
+    .coming-page,
+    .delivery-section,
+    .blog-final-cta,
+    .occasions-final-cta,
+    .wedding-events-section,
+    .why-bloom-section,
+    .about-story-section,
+    .our-approach-section,
+    .meet-florists-section,
+    .about-final-cta,
+    .latest-journal-section,
+    .studio-notes-section,
+    .related-stories-section,
+    .small-cta-section,
+    .private-enquiry-section,
+    .home-flowers-hero,
+    .flowers-collection,
+    .flowers-products,
+    .flowers-delivery,
+    .flowers-final-cta,
+    .occasions-hero,
+    .occasions-directory,
+    .occasions-process,
+    .services-hero,
+    .services-directory,
+    .corporate-florals,
+    .blog-hero,
+    .blog-featured-story,
+    .about-hero,
+    .about-client-love,
+    .contact-hero,
+    .contact-information,
+    .contact-studio,
+    .contact-faq,
+    .custom-arrangement-section,
+    .final-cta-section,
+    .home2-bestsellers,
+    .home2-concierge,
+    .home2-difference,
+    .home2-journal,
+    .home2-final-cta,
+    .home2-signature,
+    .site-footer
+) {
+        background-color: var(--color-background);
+}
+
+:root:not([data-theme="light"]) :is(
+    .login-page-panel,
+    .hero-delivery-card,
+    .custom-arrangement-panel,
+    .custom-arrangement-option-content,
+    .custom-arrangement-message-field textarea,
+    .home2-product-media,
+    .home2-journal-media,
+    .home2-signature-featured-media,
+    .home2-signature-media,
+    .flowers-collection-featured-content,
+    .flowers-collection-box,
+    .flowers-collection-signature,
+    .flowers-collection-choice,
+    .flowers-delivery-main,
+    .flowers-delivery-content,
+    .flowers-delivery-services,
+    .occasions-directory-featured,
+    .occasions-directory-item,
+    .occasions-directory-wide,
+    .occasions-directory-closing,
+    .occasions-directory-closing-content,
+    .wedding-events-content,
+    .why-bloom-card,
+    .about-story-content,
+    .our-approach-marker,
+    .meet-florist-info
+) {
+        background-color: var(--color-surface);
+}
+
+    :root:not([data-theme="light"]) .site-footer {
+        --footer-background: var(--color-background);
+        --footer-ink: var(--color-background);
     }
 }
