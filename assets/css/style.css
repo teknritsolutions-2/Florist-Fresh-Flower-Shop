@@ -1,4 +1,39 @@
 /* ========================================
+   00. LOCAL FONTS
+======================================== */
+@font-face {
+    font-family: "Cormorant Garamond";
+    font-style: normal;
+    font-weight: 500 700;
+    font-display: swap;
+    src: url("../fonts/cormorant-regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    font-style: italic;
+    font-weight: 500 700;
+    font-display: swap;
+    src: url("../fonts/cormorant-italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/manrope-regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500 700;
+    font-display: swap;
+    src: url("../fonts/manrope-medium.ttf") format("truetype");
+}
+
+/* ========================================
    01. CSS VARIABLES
 ======================================== */
 :root {
